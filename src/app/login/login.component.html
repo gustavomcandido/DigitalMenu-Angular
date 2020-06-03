@@ -1,0 +1,65 @@
+<body class="grey lighten-3">
+    <div class="row no-margin">
+      <div class="col m4 l6 photos blue-grey darken-4">
+        <div class="slider">
+          <ul class="slides">
+            <li style="background-image: url(./assets/img/1.jpg)"> </li>
+            <li style="background-image: url(../assets/img/4.jpg)"> </li>
+            <li style="background-image: url(../assets/img/5.jpg)"> </li>
+            <li style="background-image: url(../assets/img/6.jpg)"> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s12 m8 l6 login">
+        <h5 class="center-align">
+          ACESSO <strong>ADMINISTRATIVO</strong>
+        </h5>
+        <div class="row">
+          <form class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 " action="/login/login" method="post">
+           
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" name="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="senha" name="senha" type="password" class="validate">
+                  <label for="senha">Senha</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s6">
+                  <a href="#"><small>Esqueci minha senha</small></a>
+                </div>
+                <div class="col s6 right-align">
+                  <button class="btn waves-effect waves-light" type="submit">ENTRAR
+                    <i class="material-icons right">input</i>
+                  </button>
+                </div>
+              </div>
+              
+       
+          </form>
+        </div>
+              
+      </div>
+    </div>
+    <script>
+        // JavaScript source code
+$( document ).ready(function() {
+    $(".button-collapse").sideNav();
+    $(".dropdown-button").dropdown();
+    $("select").material_select();
+    $(".slider").slider({
+    	full_width: true,
+    	indicators: false,
+    	interval: 2000,
+    	transition: 3000,
+    });
+
+});
+
+    </script>
+  </body>

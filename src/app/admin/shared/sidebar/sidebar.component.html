@@ -1,0 +1,21 @@
+<header id="logo">
+    <div class="logo">
+        <a href="#" class="logo-expanded">
+            <img src="./assets/images/logo@2x.png" width="80" alt="">
+        </a>
+
+        <!-- <a href="#" class="logo-collapsed">
+            <img src="./assets/images/logo-collapsed@2x.png" width="40" alt="">
+        </a> -->
+    </div>
+    <div class="settings-icon">
+        <a href="#" data-toggle="settings-pane" data-animate="true">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </a>
+    </div>
+</header>
+<ul id="main-menu" class="main-menu">
+    <!-- add class "multiple-expanded" to allow multiple submenus to open -->
+    <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+    <app-menu *ngFor="let item of items" [item]="item"></app-menu>    
+</ul>

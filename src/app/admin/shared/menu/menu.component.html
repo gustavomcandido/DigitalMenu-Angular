@@ -1,0 +1,9 @@
+<li class="has-sub" >
+    <a (click)="openMenu()" [ngClass]="{'open' : open}">
+        <i class="{{item.icon}}" aria-hidden="true"></i>
+        <span class="title">{{item.main}}</span>
+    </a>
+    <ul [ngClass]="{'accordion': !open}">
+        <app-menu-item *ngFor="let sub of item.subItem" [sub]="sub"></app-menu-item>                 
+    </ul>
+</li>

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "DigitalMenu": {
@@ -28,9 +28,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/materialize/index.js",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery-1.11.1.min.js",
+              "src/scripts/materialize/materialize.min.js",
+              "src/scripts/main.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/TweenMax.min.js",
+              "src/assets/js/resizeable.js",
+              "src/assets/js/joinable.js",
+              "src/assets/js/xenon-api.js",
+              "src/assets/js/xenon-toggles.js",
+              "src/assets/js/datatables/js/jquery.dataTables.min.js",
+              "src/assets/js/datatables/dataTables.bootstrap.js",
+              "src/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js",
+              "src/assets/js/datatables/tabletools/dataTables.tableTools.min.js",
+              "src/assets/js/xenon-custom.js"
+                    
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +142,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DigitalMenu"
+    }
+  },
+  "defaultProject": "DigitalMenu",
+  "cli": {
+    "analytics": false
+  }
 }

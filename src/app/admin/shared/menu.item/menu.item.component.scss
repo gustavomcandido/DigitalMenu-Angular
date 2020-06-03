@@ -1,0 +1,31 @@
+span.title {
+    font-size: 13px !important;
+}
+ul, li {
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #979898;
+    cursor: pointer;
+}
+
+a>i {
+    display: inline-block;
+    margin-right: 10px;
+}
+a {
+    color: #979898;
+    text-decoration: none;
+    display: block;
+    padding: 13px 5px;
+    border-bottom: 1px solid #313437;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #fff !important;
+}
+
+.accordion{
+    display: none;
+}
