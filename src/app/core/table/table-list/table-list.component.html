@@ -1,0 +1,14 @@
+
+    <thead *ngIf="tableItens && tableItens.length > 0">
+        <tr>
+            <th *ngFor="let item of tableItens[0].itens">{{item.name}}</th>            
+        </tr>
+    </thead>
+
+    <tbody *ngIf="tableItens && tableItens.length > 0">
+        <tr *ngFor="let tableItem of tableItens">
+            <td *ngFor="let item of tableItem.itens">
+                <app-table-list-item [item]="item"></app-table-list-item>
+            </td>            
+        </tr>
+    </tbody>

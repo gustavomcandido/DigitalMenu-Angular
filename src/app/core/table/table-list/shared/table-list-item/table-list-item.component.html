@@ -1,0 +1,28 @@
+<!-- Type Text -->
+<p *ngIf="item.type == 'text'">{{ item.content }}</p>
+
+<!-- Type  Number -->
+<p *ngIf="item.type == 'number'">{{ item.content | number: '.2' }}</p>
+
+<!-- Type Price -->
+<p *ngIf="item.type == 'price'">{{ item.content | currency: item.currency }}</p>
+
+<!-- Type Combo -->
+<p *ngIf="item.type == 'combo'">{{ item.content }}</p>
+
+<!-- Type time -->
+<p *ngIf="item.type == 'time'">{{ item.content }}</p>
+
+<!-- Type Image -->
+<img *ngIf="item.type == 'image'" src="{{item.content}}" class="img-responsive" width="80">
+
+<!-- Type Actions -->
+<div *ngIf="item.type == 'actions'" class="table-button">
+    <a href="{{item.edit}}" class="btn btn-xs btn-default">
+        <span class="glyphicon glyphicon-edit"></span> Edit
+    </a>
+    <a href="{{item.delete}}" class="btn btn-xs btn-danger">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+    </a>
+</div>
+

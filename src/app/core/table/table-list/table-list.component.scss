@@ -1,0 +1,71 @@
+thead {
+    display: -header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: -row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+caption+thead>tr:first-child>th, thead>tr:first-child>th, thead:first-child>tr:first-child>th, caption+thead>tr:first-child>td, thead>tr:first-child>td, thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+thead>tr>td, tbody>tr>td, tfood>tr>td, thead>tr>th, tbody>tr>th, tfood>tr>th {
+    border-color: #eee;
+}
+ thead th,  thead td {
+    border-left-width: 0;
+    border-top-width: 0;
+}
+thead>tr>td, thead>tr>th {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    color: #2c2e2f;
+}
+thead>tr>td, tbody>tr>td, tfood>tr>td, thead>tr>th, tbody>tr>th, tfood>tr>th {
+    padding: 12px 15px;
+}
+thead>tr>th, thead>tr>td {
+    border-bottom-width: 2px;
+}
+thead>tr>th, tbody>tr>th, tfoot>tr>th, >thead>tr>td, tbody>tr>td, >tfoot>tr>td {
+    border: 1px solid #eee;
+}
+thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eee;
+}
+thead>tr>th, tbody>tr>th, tfoot>tr>th, thead>tr>td, tbody>tr>td, tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #eee;
+}
+tbody>tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+thead>tr>td, tbody>tr>td, tfood>tr>td, thead>tr>th, tbody>tr>th, tfood>tr>th {
+    border-color: #eee;
+}
+ tbody th,  tbody td {
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+tbody>tr>td, tfoot>tr>td, tbody>tr>th, tfoot>tr>th {
+    border-top: 0;
+    border-bottom: 1px solid #eee;
+}
+thead>tr>td, tbody>tr>td, tfood>tr>td, thead>tr>th, tbody>tr>th, tfood>tr>th {
+    padding: 12px 15px;
+}
+thead>tr>th, tbody>tr>th, tfoot>tr>th, thead>tr>td, tbody>tr>td, tfoot>tr>td {
+    border: 1px solid #eee;
+}
+thead>tr>th, tbody>tr>th, tfoot>tr>th, thead>tr>td, tbody>tr>td, tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #eee;
+}
